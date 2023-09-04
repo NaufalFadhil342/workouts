@@ -14,16 +14,5 @@
     },
     { "src": "/(.*)", "dest": "./api/index.js" }
   ],
-  "rewrites": [
-    {
-      "source": "/",
-      "missing": [
-        {
-          "type": "jsonwebtoken",
-          "key": "token"
-        }
-      ],
-      "destination": "./api/index.js"
-    }
-  ]
+  "rewrites": [{ "source": "/", "destination": "./api/index.js" }]
 }
