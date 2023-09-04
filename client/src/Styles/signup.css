@@ -1,0 +1,89 @@
+.signup,
+.signin {
+  background-color: white;
+  width: 100%;
+  max-width: 30rem;
+  padding: 2rem;
+  margin: 5rem auto 0;
+  border-radius: 7px;
+  box-shadow: 0 0 7px rgb(26, 26, 26, 0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.goToSignIn {
+  width: fit-content;
+  margin: 1rem auto 0;
+}
+
+.goToSignIn p {
+  color: #1f1f1f;
+}
+
+.goToSignIn p a {
+  color: #54b435;
+}
+
+.signup h3,
+.signin h3 {
+  color: #54b435;
+  font-size: 1.3em;
+}
+
+.signup .fields,
+.signin .fields {
+  width: 100%;
+  height: fit-content;
+  color: #1f1f1f;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.signup .fields label,
+.signin .fields label {
+  font-size: 15px;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.signup .fields input,
+.signin .fields input {
+  width: 100%;
+  height: 2rem;
+  padding-left: 7px;
+  border: 1px solid silver;
+  border-radius: 5px;
+  outline-color: #54b435;
+}
+
+.signup button,
+.signin button {
+  cursor: pointer;
+  padding: 0 0.5rem;
+  height: 2rem;
+  border: 1px solid #54b435;
+  border-radius: 7px;
+  background-color: #54b435;
+  color: white;
+  font-weight: 600;
+}
+
+.signup button:hover,
+.signin button:hover {
+  background-color: #4b9e2f;
+  transition: all 0.15s ease-in-out;
+}
+
+.signup .error,
+.signin .error {
+  border: 1px solid #ff3333;
+  background-color: rgba(255, 74, 74, 0.2);
+  color: #ff3333;
+  text-align: justify;
+  font-size: 15px;
+  padding: 0.5rem;
+}

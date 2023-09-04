@@ -1,0 +1,54 @@
+header {
+  width: 100%;
+  height: auto;
+}
+
+header .container {
+  width: 100%;
+  height: 5rem;
+  padding: 0 8%;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgb(31, 31, 31, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .container a {
+  color: #54b435;
+  font-style: italic;
+}
+
+header .container nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+}
+
+header .container nav span {
+  font-style: italic;
+  color: grey;
+  font-size: 15px;
+}
+
+header .container nav button {
+  cursor: pointer;
+  padding: 0 0.5rem;
+  height: 1.7rem;
+  border: 1px solid #54b435;
+  border-radius: 7px;
+  background-color: #54b435;
+  color: white;
+}
+
+header .container nav button:hover {
+  background-color: #4b9e2f;
+  transition: all 0.15s ease-in-out;
+}
+
+header .container nav a {
+  text-decoration: none;
+  color: grey;
+  font-style: normal;
+}
