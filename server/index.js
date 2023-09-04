@@ -6,7 +6,8 @@ import { workoutRoutes } from './src/router/workoutRouter.js';
 import { userRoutes } from './src/router/userRouter.js';
 
 dotenv.config();
-const app = express();
+
+export const app = express();
 
 // middleware
 app.use(express.json());
@@ -35,5 +36,3 @@ mongoose
     });
   })
   .catch((error) => console.log(error));
-
-export { app };
