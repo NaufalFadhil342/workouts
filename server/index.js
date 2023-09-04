@@ -12,7 +12,7 @@ const app = express();
 app.use(express.json());
 app.use(
   cors({
-    origin: '*',
+    origin: ['https://workouts-eight.vercel.app', 'http://localhost:3000', 'https://github.com/'],
     credentials: true,
   })
 );
