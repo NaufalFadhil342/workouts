@@ -2,21 +2,19 @@ import express from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
 import mongoose from 'mongoose';
-import { workoutRoutes } from './src/router/workoutRouter.js';
-import { userRoutes } from './src/router/userRouter.js';
+import { workoutRoutes } from '../src/router/workoutRouter.js';
+import { userRoutes } from '../src/router/userRouter.js';
 
 dotenv.config();
 
+export const config = {
+  runtime: 'edge',
+};
 export const app = express();
 
 // middleware
 app.use(express.json());
-app.use(
-  cors({
-    origin: ['https://vercel.com', 'http://localhost:3000', 'https://github.com', 'https://www.google.com'],
-    credentials: true,
-  })
-);
+app.use(cors());
 app.use((req, res, next) => {
   console.log(req.path, req.method);
   next();
