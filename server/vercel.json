@@ -8,10 +8,9 @@
   ],
   "routes": [
     {
-      "src": "/",
-      "headers": { "cache-control": "s-maxage=1000" },
+      "src": "/(.*)",
+      "headers": { "cache-control": "s-maxage=90000" },
       "dest": "./api/index.js"
-    },
-    { "src": "/(.*)", "dest": "./api/index.js" }
+    }
   ]
 }
